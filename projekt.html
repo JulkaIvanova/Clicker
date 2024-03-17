@@ -1,0 +1,389 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" style="border-radius: 45px;" href="frog.png" />
+        <!--https://i.pinimg.com/564x/39/17/36/3917366ad88d6c1bcc1b6ce4dfbdb027.jpg-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Rubik+Scribble&family=Rubik:wght@300&family=Sevillana&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Pixelify+Sans:wght@400..700&family=Rubik+Scribble&family=Rubik:wght@300&family=Sevillana&display=swap" rel="stylesheet">
+        
+        <title>Жабье болото</title>
+        <style>
+            body {
+                background: url("https://i.pinimg.com/564x/ee/5a/f2/ee5af29e72d19f16cca07a7bcd378675.jpg");
+                background-size: 100%;
+                padding: 0;
+                margin: 0;
+            }
+            main{
+                width: 1920px;
+                height: 955px;
+                background: none;
+                background-size: 100%;
+                image-rendering: optimizeQuality;
+            }
+            
+            .main-text{
+                color: #a5fc8b;
+                text-align: center;
+                font-family: 'Rubik Bubbles';
+                font-size: 200px;
+                line-height: 10px
+            }
+
+            #startButton{
+                position: absolute;
+                height: 106px;
+                width: 316.44px;
+                background: #3bee68;
+                border: none;
+                border-radius: 44px;
+                color: #FFFFFF;
+                font-family: 'Comfortaa';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 18px;
+                letter-spacing: 1.96px;
+                text-transform: uppercase;    
+                text-align: center; 
+                margin-left: 750px;    
+                margin-top: 10px;
+            }
+
+            .but{
+                position: absolute;
+                height: 56px;
+                width: 216.44px;
+                background: #3bee68;
+                border: none;
+                border-radius: 44px;
+                color: #FFFFFF;
+                font-family: 'Comfortaa';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 13px;
+                line-height: 18px;
+                letter-spacing: 1.96px;
+                text-transform: uppercase;    
+                text-align: center; 
+                margin-left: 170px;    
+                margin-top: 10px;
+            }
+
+            
+            #startButton:hover{
+                background-color: #269642;
+            }
+
+            .but:hover{
+                background-color: #269642;
+            }
+            .litle-img{
+                position: absolute;
+                height: 150px;
+                left: 1450px;
+                top: 100px;
+            }
+            .block{
+                display: flex;
+                flex-direction: column;
+                background-color: #FFFFFF;
+                height: 930px;
+                width: 500px;
+                margin-left: 1100px; 
+                margin-top: 10px; 
+                border-radius: 20px; 
+                float: right;
+            }
+            .litl-block{
+                background-color: #d3ddca;
+                height: 295px;
+                width: 450px;
+                border-radius: 20px; 
+                margin-top: 10px;
+                margin-left: 30px;
+            }
+            .livs{
+                color: #2f5224;
+                text-align: center;
+                font-family: 'Rubik Bubbles';
+            }
+            .discripshen{
+                color: #2f5224;
+                font-family: 'Comfortaa';
+                font-size: 20px;
+                margin-top: 55px;
+                margin-left: 190px;
+            }
+            .discripshen-2{
+                margin-left: 190px;
+                margin-top: 10px;
+                color: #2f5224;
+                font-family: 'Comfortaa';
+                font-size: 12px;
+            }
+            .block-with-discripshens{
+                display: block;
+                flex-direction: column;
+            }
+            .mony{
+                color: white;
+                font-size: 50px;
+                font-family: "Pixelify Sans";
+                margin-left: 10px;
+                margin-top: 53px;
+            }
+
+            #blockWithAll{
+                /* display: flex;  */
+                display: none;
+                flex-direction: row"
+            }
+
+            #frog-1{
+                position: fixed; 
+                top: 700px; 
+                left: 300px; 
+                /* display: block; */
+                display: none;
+            }
+
+            #livs-1{
+                position: fixed; 
+                top: 450px; 
+                left: 650px; 
+                display: none;
+            }
+
+            #livs-1:hover{
+                transition-property: height;
+                height: 170px;
+                transition-duration: 1s;
+
+            }
+            #kuvshincka{
+                position: fixed;
+                width: 150px;
+                top: 650;
+                left: 1000px;
+                display: none;
+
+            }
+            #kuvshincka:hover{
+                transition-property: width;
+                width: 170px;
+                transition-duration: 1s;
+            }
+
+            #litle-frog{
+                position: fixed;
+                top: 500px;
+                left: 500;
+                width: 200px;
+                display: none;
+            }
+
+            #litle-frog:hover{
+                transition-property: width;
+                width: 220px;
+                transition-duration: 1s;
+            }
+
+
+            /* #j{
+                display: block;
+            } */
+        </style>
+        <script src='https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js'></script>
+        <script>
+            let autoCointsValue = { value: 1}
+            let cointsValue = { value: 1}
+            let frogsCount = { value: 1}
+            let frogSits = { value: 1}
+            let upForLivs = {value: 10}
+            const upFrogSits = {value: 1}
+            let upForAvtoCoints = {value: 10}
+            
+        
+            function show(id){
+                let showObjekt = document.getElementById(id)
+                showObjekt.style.display = "block"
+            }
+
+            function randint(max, min) {
+                return Math.round(Math.random() * (max - min) + min)
+            }
+
+            function avtoCoints(){
+                //click()
+                let coints = document.getElementById("mony")
+                coints.innerHTML = Number(coints.innerHTML) + autoCointsValue.value 
+                setTimeout(avtoCoints, 1000)
+            }
+
+            function clickOne(){
+                let body = document.querySelector("body")
+                let startWindow = document.getElementById("startWindow")
+                let button_start = document.getElementById("startButton")
+                let mainWindow = document.getElementById("blockWithAll")
+                let frog = document.getElementById("frog-1")
+                let mainTheme = document.querySelector("main")
+                body.style.background = "none"
+                body.style.backgroundSize = 0
+                startWindow.style.display = "none"
+                mainTheme.style.background = "url(https://i.pinimg.com/564x/e8/8d/a7/e88da743c49089b489bb5708bee44c8c.jpg)"
+                mainTheme.style.backgroundSize = "100%"
+                mainWindow.style.display = "flex"
+                frog.style.display = "block"
+                button_start.style.display = "none"
+                avtoCoints()
+            }
+
+            function cointsUp(){
+                let r = window.innerWidth
+                let frogOne = document.getElementById("frog-1")
+                let coints = document.getElementById("mony")
+                coints.innerHTML = Number(coints.innerHTML) + cointsValue.value
+                
+                anime({
+                    targets: frogOne,
+                    duration: 500,
+                    rotate: 360,
+                    easing: "linear"
+                }).finished.then(function(){
+                    frogOne.style.transform = "rotate(0deg)"
+                    let rend_up = window.innerHeight-randint(window.innerHeight-450, 100)
+                    let rend_left = randint(r-610, 1)
+                    anime({
+                        targets: frogOne,
+                        duration: 500,
+                        left: rend_left,
+                        top: rend_up,
+                        easing: "linear"      
+                    })   
+                })
+            }
+
+            function buy(but, parameter, up, id, text, frogsCount){
+                let coints = document.getElementById("mony")
+                
+                if (Number(coints.innerHTML) - but.value < 0){
+                    alert("Недостаточно монет")
+                    return
+                }
+                if (frogsCount != undefined){
+                    if (frogsCount.value + 1 > frogSits.value){
+                        alert("Недостаточно места для лягушки, купите кувшинку")
+                        return
+                    }
+                    
+                    frogsCount.value += 1
+                    
+                }
+                    //     else{
+                    //         coints.innerHTML = Number(coints.innerHTML) - but.value
+                    //         parameter.value += up.value
+                    //         up.value *= 2
+                    //         but.value *= 4
+                    //         but.innerHTML = `Купить за ${but.value} монет`
+                    //         e = text.innerHTML.split(" ")
+                    //         e[0] = `+${up.value}`
+                    //         text.innerHTML = e.join(" ")
+
+                    //         show(id)
+                    //     }
+                
+                    // } 
+                
+                
+                    //console.log(text.innerHTML)
+                    coints.innerHTML = Number(coints.innerHTML) - but.value
+                    parameter.value += up.value
+                    up.value *= 2
+                    
+                    but.value *= 4
+                    but.innerHTML = `Купить за ${but.value} монет`
+                    e = text.innerHTML.split(" ")
+                    e[0] = `+${up.value}`
+                    text.innerHTML = e.join(" ")
+                    show(id)
+
+                    // if (but.value == 20){
+                    //     show("livs-1")
+                    // }
+
+                
+            }
+
+            function buyBasic(i, parameter, up, id, frogsCount){
+                let buttons = document.querySelectorAll(".but")
+                let discripshens = document.querySelectorAll(".discripshen-2")
+                buy(buttons[i], parameter, up, id, discripshens[i], frogsCount)
+                // return Number(parameter) + Number(countUp) 
+            }
+            //frogOne.addEventListener("click", cointsUp)
+        </script>
+    </head>
+    <body>
+        <header></header>
+        <main>
+            <!--Стартовый экран-->
+            <div id="startWindow" style="display: block; margin-top: 300px;">
+                <h1 class="main-text" style="margin-right: 250px; color: #2f5224;">Жабье</h1>
+                <h1 class="main-text" style="margin-left: 250px; ">болото</h1>
+                <button id="startButton" style="display: block;" onclick="clickOne()">Старт</button>
+            </div>
+            
+            <!--Основной блок с кликером-->
+            <img id="litle-frog" src="frog_2.png">
+            <img id="kuvshincka" src="f.png">
+            <img id="livs-1" class="litle-img" src="https://png.pngtree.com/png-clipart/20220110/original/pngtree-simple-small-fresh-green-cartoon-leaves-png-image_7056303.png">
+            <img id="frog-1" onclick="cointsUp()" src="frog.png" alt="" width="100px" height="100px">
+            
+            <div id="blockWithAll">
+                <img style="margin-top: 32px; margin-left: 10px;" src="https://png.pngtree.com/png-clipart/20210309/original/pngtree-golden-coins-3d-png-image_5869983.png" width="100px" height="100px">
+                <div style="width: 200px;"><p class="mony" id="mony">0</p></div>
+                    
+                
+                <div class="block">
+                
+                    <div class="litl-block">
+                        <div class="block-with-discripshens">
+                            <h1 class="livs">Кучка листьев</h1>
+                            <h3 class="discripshen">Добавит уюта :)</h3>
+                        </div>
+                        <p class="discripshen-2">+10 к добычи золота</p>
+                        <img class = "litle-img" src="https://png.pngtree.com/png-clipart/20220110/original/pngtree-simple-small-fresh-green-cartoon-leaves-png-image_7056303.png">
+                        <button class="but" value="20" onclick="buyBasic(0, cointsValue, upForLivs, 'livs-1')">Купить за 20 монет</button>
+                    </div>
+                    <div class="litl-block">
+                        <div class="block-with-discripshens">
+                            <h1 class="livs">Жабка</h1>
+                            <h3 class="discripshen" style="margin-top: 45px;">Житель этого</br>болота</h3>
+                        </div>
+                        <p class="discripshen-2">+10 к авто добычи золота</p>
+                        <img class = "litle-img" style="border-radius: 20px; margin-top: 315px;" src="https://kalix.club/uploads/posts/2022-12/1672246824_kalix-club-p-milaya-zhabka-art-pinterest-11.jpg">
+                        <button class="but" value="30" onclick="buyBasic(1, autoCointsValue, upForAvtoCoints, 'litle-frog', frogsCount)">Купить за 30 монет</button>
+                    </div>
+                    <div class="litl-block">
+                        <div class="block-with-discripshens">
+                            <h1 class="livs">Кувшынка</h1>
+                            <h3 class="discripshen" style="margin-top: 45px;">Кроватка для</br>уставшей жабки</h3>
+                        </div>
+                        <p class="discripshen-2">+1 к возможному количеству жабок</p>
+                        <img class = "litle-img" style="border-radius: 20px; margin-top: 625px;" src="https://i.pinimg.com/564x/af/67/ba/af67bab7a4234dec8d8bc5e561f54e4a.jpg">
+                        <button class="but" value="40" onclick="buyBasic(2, frogSits, upFrogSits, 'kuvshincka')">Купить за 40 монет</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer></footer>
+    </body>
+</html>
